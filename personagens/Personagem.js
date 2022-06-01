@@ -1,15 +1,20 @@
 export class Personagem{
 
-    constructor(nome){
+    constructor(nome,hp,ataque,defesa){
         //Class abstrata, somente para uso de herança
-        if( this.constructor == Personagem){
+        if( this.constructor === Personagem){
             throw new Error ("Está classe não pode ser instanciada diretamente.")
 
-        }else{
+        }else if(this.constructor === Personagem){
             this._nome = nome;
             this._hp = 520;
             this._ataque = 5;
             this._defesa = 2;
+        }else{
+            this._nome = nome;
+            this._hp = hp;
+            this._ataque = ataque;
+            this._defesa = defesa;
         }
         
     }
