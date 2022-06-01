@@ -14,5 +14,32 @@ export class Personagem{
         
     }
 
-     
+    get nome(){
+        return this._nome;
+    }
+
+    get hp(){
+        return this._hp;
+    }
+
+    set hp(valorHp){
+        this._hp = valorHp;
+    }
+
+    get ataque(){
+        return this._ataque;
+    }
+
+    set ataque(valorAtaque){
+        this._ataque = valorAtaque;
+    }
+
+    get defesa(){
+        return this._defesa;
+    }
+
+    set defesa(valorDefesa){
+        this._defesa = valorDefesa;
+    }
+
 }
