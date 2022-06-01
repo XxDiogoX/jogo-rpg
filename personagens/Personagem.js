@@ -42,4 +42,21 @@ export class Personagem{
         this._defesa = valorDefesa;
     }
 
+    atacar(alvo){
+        alvo.sofrerDano(alvo.hp - this.ataque,alvo);
+    }
+
+
+    sofrerDano(danoSofrido,alvo){
+        this.__sofrerDano(danoSofrido,alvo);
+
+    }
+
+    __sofrerDano(danoSofrido,alvo){
+        alvo.hp -= danoSofrido;
+    }
+
+    
+
+
 }
