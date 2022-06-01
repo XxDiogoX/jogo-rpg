@@ -51,6 +51,19 @@ export class Jogador extends Personagem{
         this._expParaProximoNivel = exp;
     }
 
+    statusPersonagem(){
+        console.log("------------------------------------------")
+        console.log(`|                Status                  |`)
+        console.log(`|    ${this.nome}                               |`)
+        console.log(`|    LV: ${this.lv}                               |`)
+        console.log(`|    Espada: ${this.espada}                     |`)
+        console.log(`|    Armadura: ${this.armadura}                   |`)
+        console.log(`|    Escudo: ${this.escudo}                      |`)
+        console.log(`|    EXP: ${this.exp}                            |`)
+        console.log("------------------------------------------")
+
+    }
+
     atacarInimigo(inimigo){
         if(inimigo instanceof Inimigo){
             this.atacar(inimigo);
