@@ -64,6 +64,24 @@ export class Jogador extends Personagem{
 
     }
 
+    equiparEspada(espada){
+        if(espada instanceof Espada){
+            this.espada = espada;
+        }
+    }
+
+    euiparArmadura(armadura){
+        if(armadura instanceof Armadura){
+            this.armadura = armadura;
+        }
+    }
+
+    equiparEscudo(escudo){
+        if(escudo instanceof Escudo){
+            this._escudo = escudo;
+        }
+    }
+
     atacarInimigo(inimigo){
         if(inimigo instanceof Inimigo){
             this.atacar(inimigo);
