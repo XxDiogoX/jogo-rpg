@@ -1,4 +1,5 @@
 import { Personagem } from "./Personagem.js";
+import { Inimigo } from "./Inimigo.js";
 
 export class Jogador extends Personagem{
     constructor(nome){

@@ -1,3 +1,5 @@
+import { Jogador } from "./Jogador.js";
+
 export class Personagem{
 
     constructor(nome,hp,ataque,defesa){
@@ -5,10 +7,10 @@ export class Personagem{
         if( this.constructor === Personagem){
             throw new Error ("Está classe não pode ser instanciada diretamente.")
 
-        }else if(this.constructor === Personagem){
+        }else if(this.constructor === Jogador){
             this._nome = nome;
             this._hp = 520;
-            this._ataque = 5;
+            this._ataque = 15;
             this._defesa = 2;
         }else{
             this._nome = nome;
