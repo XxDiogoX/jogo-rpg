@@ -9,6 +9,8 @@ export class Jogador extends Personagem{
         this._armadura = "Nenhuma";
         this._escudo = "Nenhum";
         this._expParaProximoNivel = 200;
+        this._pedraElunium = 0;
+        this._pedraOridecon = 0;
 
     }
 
@@ -50,6 +52,22 @@ export class Jogador extends Personagem{
 
     set exp(exp){
         this._expParaProximoNivel = exp;
+    }
+
+    get pedraElunium(){
+        return this._pedraElunium;
+    }
+
+    set pedraElunium(pedra){
+        this._pedraElunium = pedra;
+    }
+
+    get pedraOridecon(){
+        return this._pedraOridecon;
+    }
+
+    set pedraOridecon(pedra){
+        this._pedraOridecon = pedra;
     }
 
     statusPersonagem(){
